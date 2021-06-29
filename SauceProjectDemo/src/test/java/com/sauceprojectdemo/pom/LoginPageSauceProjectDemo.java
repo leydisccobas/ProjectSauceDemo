@@ -24,7 +24,7 @@ public class LoginPageSauceProjectDemo extends BaseSauceProjectDemo{
 	public void start() {
 		goToURL("https://www.saucedemo.com/");
 	}
-
+	@Step("Login con usuario estandar")
 	public void loginStandardUser() {
 		if(isDisplayed(userNameLocator)) {
 			type("standard_user", userNameLocator);

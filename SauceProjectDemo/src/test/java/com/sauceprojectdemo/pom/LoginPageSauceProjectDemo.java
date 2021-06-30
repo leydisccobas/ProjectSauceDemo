@@ -20,11 +20,11 @@ public class LoginPageSauceProjectDemo extends BaseSauceProjectDemo{
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
-	@Step("start")
+	@Step("Begin the browser")
 	public void start() {
 		goToURL("https://www.saucedemo.com/");
 	}
-	@Step("Login con usuario estandar")
+	@Step("Login with standard_user")
 	public void loginStandardUser() {
 		if(isDisplayed(userNameLocator)) {
 			type("standard_user", userNameLocator);
@@ -35,6 +35,7 @@ public class LoginPageSauceProjectDemo extends BaseSauceProjectDemo{
 			System.out.println("Login page was not found");
 		}
 	}
+	@Step("Check if the home page is displayed")
 	public boolean isHomePageDisplayed() throws InterruptedException {
 		Thread.sleep(3000);
 		if(isDisplayed(homePageTitleLocator)) {

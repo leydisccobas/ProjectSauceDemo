@@ -16,7 +16,7 @@ public class BaseSauceProjectDemo {
 
 	public WebDriver connectionChromeDriver() {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\leydi\\eclipse-workspace\\SauceProjectDemo\\src\\test\\resources\\chromedriver\\chromedriver.exe");
+				"C:\\Users\\leydi\\OneDrive\\Documents\\Automation_Selenium\\saucedemo_git\\repository2\\SauceProjectDemo\\src\\test\\resources\\chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		return driver;
 	}
